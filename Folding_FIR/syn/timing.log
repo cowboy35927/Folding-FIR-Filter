@@ -1,0 +1,78 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FIR
+Version: R-2020.09-SP5
+Date   : Tue Jan 10 15:02:48 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: index_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: D_in_reg[11]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIR                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  index_reg[4]/CK (DFFRX4)                 0.00       0.50 r
+  index_reg[4]/Q (DFFRX4)                  0.54       1.04 f
+  U4686/Y (NOR2X8)                         0.16       1.20 r
+  U5302/Y (NAND2X8)                        0.14       1.35 f
+  U3975/Y (INVX12)                         0.09       1.43 r
+  U4123/Y (NAND2X8)                        0.09       1.53 f
+  U4122/Y (INVX20)                         0.15       1.68 r
+  U4096/Y (NAND2X6)                        0.09       1.77 f
+  U4842/Y (NAND4X6)                        0.14       1.90 r
+  U4231/Y (NOR3X8)                         0.10       2.00 f
+  U4055/Y (NAND3X8)                        0.11       2.11 r
+  U4177/Y (XOR2X4)                         0.24       2.35 r
+  U4167/Y (AND2X8)                         0.23       2.58 r
+  U4165/Y (INVX12)                         0.08       2.66 f
+  U4201/Y (BUFX20)                         0.12       2.78 f
+  U3251/Y (INVX12)                         0.06       2.84 r
+  U5433/Y (NAND2X4)                        0.07       2.91 f
+  U3165/Y (NAND3X4)                        0.13       3.04 r
+  U5098/Y (NOR2X8)                         0.09       3.13 f
+  U4205/Y (INVX4)                          0.08       3.21 r
+  U5182/Y (NAND2X6)                        0.07       3.28 f
+  U3056/Y (NAND2X6)                        0.08       3.36 r
+  U5179/Y (XOR2X4)                         0.13       3.49 r
+  U5138/Y (XNOR2X4)                        0.24       3.73 r
+  U5137/Y (INVX12)                         0.10       3.83 f
+  U2913/Y (BUFX6)                          0.14       3.97 f
+  U5873/CO (ACHCINX4)                      0.35       4.32 f
+  U5874/Y (NAND2X2)                        0.26       4.58 r
+  U5875/Y (NAND2X2)                        0.13       4.71 f
+  U5877/Y (NAND3X2)                        0.14       4.86 r
+  U5878/Y (XNOR2X4)                        0.16       5.02 f
+  U2833/Y (NOR2X4)                         0.10       5.12 r
+  D_in_reg[11]/D (DFFRX2)                  0.00       5.12 r
+  data arrival time                                   5.12
+
+  clock clk (rise edge)                    4.88       4.88
+  clock network delay (ideal)              0.50       5.38
+  clock uncertainty                       -0.10       5.28
+  D_in_reg[11]/CK (DFFRX2)                 0.00       5.28 r
+  library setup time                      -0.16       5.12
+  data required time                                  5.12
+  -----------------------------------------------------------
+  data required time                                  5.12
+  data arrival time                                  -5.12
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

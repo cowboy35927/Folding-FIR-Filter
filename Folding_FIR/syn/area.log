@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : area
+Design : FIR
+Version: R-2020.09-SP5
+Date   : Tue Jan 10 15:02:48 2023
+****************************************
+
+Library(s) Used:
+
+    slow (File: /home/m111/m111064503/cad/CBDK/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+Number of ports:                           35
+Number of nets:                          4747
+Number of cells:                         4287
+Number of combinational cells:           3717
+Number of sequential cells:               570
+Number of macros/black boxes:               0
+Number of buf/inv:                        747
+Number of references:                     137
+
+Combinational area:              51449.891363
+Buf/Inv area:                     7762.210212
+Noncombinational area:           18608.595634
+Macro/Black Box area:                0.000000
+Net Interconnect area:          448188.984436
+
+Total cell area:                 70058.486998
+Total area:                     518247.471434
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  ---------
+FIR                               70058.4870    100.0  51449.8914  18608.5956  0.0000  FIR
+--------------------------------  ----------  -------  ----------  ----------  ------  ---------
+Total                                                  51449.8914  18608.5956  0.0000
+
+1
